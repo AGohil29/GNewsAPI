@@ -69,7 +69,7 @@ class NewsFragment : Fragment() {
                 is com.arun.newsapiclient.data.util.Resource.Error->{
                    hideProgressBar()
                    response.message?.let {
-                       Toast.makeText(activity,"An error occurred : $it", Toast.LENGTH_LONG).show()
+                       Toast.makeText(activity,"An error occurred : $it", Toast.LENGTH_SHORT).show()
                    }
                 }
 
@@ -146,7 +146,7 @@ class NewsFragment : Fragment() {
                is com.arun.newsapiclient.data.util.Resource.Error->{
                    hideProgressBar()
                    response.message?.let {
-                       Toast.makeText(activity,"An error occurred : $it", Toast.LENGTH_LONG).show()
+                       Toast.makeText(activity,"An error occurred : $it", Toast.LENGTH_SHORT).show()
                    }
                }
 
